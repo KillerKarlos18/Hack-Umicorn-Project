@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<style>
+        *{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: dodgerblue;
+    text-align: center;
+    font-size: xx-large;
+}
+.star{
+    color: red;
+}
+.button{
+    padding: 15px;
+    font-size: xx-large;
+    border-radius: 20px;
+}
+.header2{
+    background-color: rgb(0, 167, 167);
+    text-align: center;
+    font-size: xx-large;
+}
+.banner{
+    /* background-image: url(banner.jpg); */
+    background-color: dodgerblue;
+    height: 300px;
+    min-height: 100px;
+    padding-bottom: 0px;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    text-align: center;
+    text-shadow: white 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+}
+.form{
+    font-size:xx-large;
+}
+input, select, textarea{
+    font-size: xx-large;
+}
+.menu_bar{
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+nav {
+    display: flex;
+    background-color: rgb(0, 167, 167);
+    align-items: center;
+    height: 30px;
+    padding: 20px 0px 20px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+nav .menu-btn {
+    color: white;
+    padding: 20px 20px 15px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    position: sticky;
+  }
+.flex-align-left {
+    margin-left:auto;
+}
+.flex-align-center {
+    margin-left: 47%;
+}
+.home:hover {
+    background-color: rgb(0, 76, 76);
+    color: whitesmoke;
+    font-size: 33px;
+
+}
+</style>
+
+<body>
+    <div>
+    <form action="" method="get">
+    <header><div class="banner">Fitness Hub</div></header>
+    <div class="menu_bar">
+        <nav>
+            <a class="menu-btn flex-align-center">Sign In</a> 
+            <a href="index.html" class="menu-btn flex-align-left home">Home</a>
+        </nav> 
+    </div>
+<div class="form">
+    <hr>
+    <h2>User information</h2>
+    <br>
+    
+    Role<sup class="star">*</sup> : <select name="role" required>
+        <option value="">Select</option>
+        <option value="Trainer">Trainer</option>
+        <option value="Student">Student</option>
+    </select>
+    <br><br>
+    Name<sup class="star">*</sup> : <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+    <br><br>
+    <fieldset class="temp">
+    <legend>Gender<sup class="star">*</sup> :</legend>           
+    <ul> 
+    <li>Female <input type="radio" name="gender" id="Female" required></li> 
+    <li>Male <input type="radio" name="gender" id="male" required></li>
+    <li>Other <input type="radio" name="gender" id="other" required></li>
+    </ul>
+    </fieldset>
+     <br><br>
+    Address<sup class="star">*</sup> : <textarea name="address" id="address" placeholder="Enter Your Address" required></textarea>
+    <br><br>
+    Email<sup class="star">*</sup> : <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    <br><br>
+    Phone Number<sup class="star">*</sup> : <input type="number" name="Phone_no" id="Phone_no" placeholder="Enter Your Phone Number" required>
+    <br><br>
+    <center><b><input type="submit" value="Register Now" class="button"></b></center>
+</div>
+</div>
+</form>
+</body>
+</html>

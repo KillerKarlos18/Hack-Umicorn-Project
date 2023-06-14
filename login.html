@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <!-- <link rel="stylesheet" href="abc.css"> -->
+</head>
+<style>
+    *{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+.texts{
+    font-size: xx-large;
+    text-align-last: center;
+    /* padding-left: 30%; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.star{
+    color: red;
+}
+.button{
+    padding: 15px;
+    font-size: xx-large;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.button2{
+    padding: 15px;
+    font-size: xx-large;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color: azure;
+    border: solid;
+}
+.header2{
+    text-align: center;
+    margin-right: 0%;
+}
+input{
+    font-size: xx-large;
+}
+.banner{
+    /* background-image: url(banner.jpg); */
+    background-color: dodgerblue;
+    height: 300px;
+    min-height: 100px;
+    padding-bottom: 0px;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    text-align: center;
+    text-shadow: white 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+}
+.menu_bar{
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+nav {
+    display: flex;
+    background-color: rgb(0, 167, 167);
+    align-items: center;
+    height: 30px;
+    padding: 20px 0px 20px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+nav .menu-btn {
+    color: white;
+    padding: 20px 20px 15px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    position: sticky;
+  }
+.flex-align-left {
+    margin-left:auto;
+}
+.flex-align-center {
+    margin-left: 47%;
+}
+.home:hover {
+    background-color: rgb(0, 76, 76);
+    color: whitesmoke;
+    font-size: 33px;
+
+}
+</style>
+<body>
+    <div>
+    <form action="" method="get">
+        <header><div class="banner">Fitness Hub</div></header>
+    <div class="menu_bar">
+        <nav>
+            <a class="menu-btn flex-align-center">Log In</a> 
+            <a href="index.html" class="menu-btn flex-align-left home">Home</a>
+        </nav> 
+    </div>
+    <hr>
+  <div class="texts">
+    Email<sup class="star">*</sup> : <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    <br><br>
+    Password<sup class="star">*</sup> : <input type="number" name="Pincode" id="Pincode" placeholder="Enter Your Password" required>
+  </div>
+    <center><b><a class="button2" href="signin.html">Create New Account</a> <input type="submit" value="Login" class="button"></b></center>
+</div>
+</form>
+</body>
+</html>
